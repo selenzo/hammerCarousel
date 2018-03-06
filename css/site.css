@@ -1,0 +1,52 @@
+.carousel {
+    background-color: grey;
+    height: 300px;
+    width: 800px;
+    margin: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 200px;
+    height: 300px;
+    display: block;
+}
+
+.animate-left {
+    margin-left: -200px;
+    transition-property: margin-left;
+    transition-duration: 1s;
+}
+
+.animate-right {
+    margin-left: 0px;
+    transition-property: margin-left;
+    transition-duration: 1s;
+}
+
+.carousel-overlay {
+    position: absolute;
+    left: 200px;
+    height: 280px;
+    width: 180px;
+    border: 10px solid red;
+}
+
+.carousel ul {
+    pointer-events: none;
+    height: 300px;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+
+.carousel li {
+    display: inline-block;
+}
+
+.carousel li:first-child {
+    margin-left: -200px;
+}
